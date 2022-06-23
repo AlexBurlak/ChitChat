@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { LocalStorageService } from '../services/localStorage.service';
 
 export class Counter extends Component {
   static displayName = Counter.name;
@@ -13,6 +14,7 @@ export class Counter extends Component {
     this.setState({
       currentCount: this.state.currentCount + 1
     });
+    console.log(LocalStorageService.get(LocalStorageService.email) != null);
   }
 
   render() {
