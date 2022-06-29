@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChitChat.DAL", "..\ChitChat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChitChat.BLL", "..\ChitChat.BLL\ChitChat.BLL.csproj", "{7A485866-CB72-495E-953C-F88F1F9285D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChitCaht.Tests", "..\ChitCaht.Tests\ChitCaht.Tests.csproj", "{7A12AE98-CC8F-46F6-9DB9-8B086FB8F7A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{7A485866-CB72-495E-953C-F88F1F9285D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A485866-CB72-495E-953C-F88F1F9285D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A485866-CB72-495E-953C-F88F1F9285D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A12AE98-CC8F-46F6-9DB9-8B086FB8F7A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A12AE98-CC8F-46F6-9DB9-8B086FB8F7A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A12AE98-CC8F-46F6-9DB9-8B086FB8F7A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A12AE98-CC8F-46F6-9DB9-8B086FB8F7A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
