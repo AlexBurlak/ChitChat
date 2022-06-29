@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChitChat.Core", "..\ChitChat.Core\ChitChat.Core.csproj", "{83B41486-DF97-4F07-95BF-414251A17D32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChitChat.API", "ChitChat.API.csproj", "{ED786528-74EA-476F-A38B-7E439EF874AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChitChat.DAL", "..\ChitChat.DAL\ChitChat.DAL.csproj", "{1405EC4F-20FB-4B56-9DD5-34E4BB2641F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChitChat.BLL", "..\ChitChat.BLL\ChitChat.BLL.csproj", "{7A485866-CB72-495E-953C-F88F1F9285D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83B41486-DF97-4F07-95BF-414251A17D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83B41486-DF97-4F07-95BF-414251A17D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83B41486-DF97-4F07-95BF-414251A17D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83B41486-DF97-4F07-95BF-414251A17D32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED786528-74EA-476F-A38B-7E439EF874AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED786528-74EA-476F-A38B-7E439EF874AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED786528-74EA-476F-A38B-7E439EF874AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED786528-74EA-476F-A38B-7E439EF874AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1405EC4F-20FB-4B56-9DD5-34E4BB2641F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1405EC4F-20FB-4B56-9DD5-34E4BB2641F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1405EC4F-20FB-4B56-9DD5-34E4BB2641F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1405EC4F-20FB-4B56-9DD5-34E4BB2641F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A485866-CB72-495E-953C-F88F1F9285D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A485866-CB72-495E-953C-F88F1F9285D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A485866-CB72-495E-953C-F88F1F9285D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A485866-CB72-495E-953C-F88F1F9285D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1ED3BFD9-8754-4C4E-A662-4F3FA61ECACE}
+	EndGlobalSection
+EndGlobal
