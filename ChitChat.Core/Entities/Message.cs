@@ -10,5 +10,6 @@
         public User Reciever { get; set; }
         public Guid ChatId { get; set; }
         public Chat Chat { get; set; }
+        public DateTime SendTime { get; set; }
     }
 }
