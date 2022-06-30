@@ -1,5 +1,6 @@
 using System.Text;
 using ChitChat.API.Configurations;
+using ChitChat.API.Helpers;
 using ChitChat.Core.Entities;
 using ChitChat.DAL.Context;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -14,7 +15,14 @@ ConfigurationManager configuration = builder.Configuration;
 
 builder.Services.AddDbContext<ChitChatContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("ChitChatContext")));
-builder.Services.AddIdentity<User, Role>()
+builder.Services.AddIdentity<User, Role>(options =>
+    {
+        options.Password.RequireDigit = false;
+        options.Password.RequireLowercase = false;
+        options.Password.RequireUppercase = false;
+        options.Password.RequireNonAlphanumeric = false;
+        options.Password.RequiredUniqueChars = 0;
+    })
     .AddEntityFrameworkStores<ChitChatContext>()
     .AddDefaultTokenProviders();
 
@@ -61,6 +69,8 @@ else
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+
+app.UseMiddleware<ErrorHandlerMiddleware>();
 
 app.UseAuthentication();
 app.UseAuthorization();
