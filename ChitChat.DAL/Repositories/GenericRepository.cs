@@ -2,6 +2,7 @@
 using ChitChat.Core.Entities;
 using ChitChat.DAL.Context;
 using ChitChat.DAL.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace ChitChat.DAL.Repositories;
 
@@ -13,29 +14,34 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         _context = context;
     }
-    public T Get(Guid id)
+    public async Task<T> GetAsync(Guid id)
     {
-        return _context.Set<T>().Find(id);
+        return await _context.Set<T>().FindAsync(id);
     }
 
-    public ICollection<T> GetAll()
+    public async Task<ICollection<T>> GetAllAsync()
     {
-        return _context.Set<T>().ToList();
+        return await _context.Set<T>()
+            .AsNoTracking()
+            .ToListAsync();
     }
 
-    public ICollection<T> Find(Expression<Func<T, bool>> expression)
+    public async Task<ICollection<T>> FindAsync(Expression<Func<T, bool>> expression)
     {
-        return _context.Set<T>().Where(expression).ToList();
+        return await _context.Set<T>()
+            .Where(expression)
+            .AsNoTracking()
+            .ToListAsync();
     }
 
-    public void Add(T entity)
+    public async Task AddAsync(T entity)
     {
-        _context.Set<T>().Add(entity);
+        await _context.Set<T>().AddAsync(entity);
     }
 
-    public void AddRange(IEnumerable<T> range)
+    public async Task AddRangeAsync(IEnumerable<T> range)
     {
-        _context.Set<T>().AddRange(range);
+        await _context.Set<T>().AddRangeAsync(range);
     }
 
     public void Remove(T entity)

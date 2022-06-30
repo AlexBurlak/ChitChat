@@ -1,0 +1,21 @@
+<form [formGroup]="registerForm">
+  <div class="form-floating mb-3">
+    <input type="email" id="email" placeholder="Email" class="form-control" formControlName="email">
+    <label for="email" class="form-label">Email</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="text" id="login" placeholder="Login" class="form-control" formControlName="login">
+    <label for="login" class="form-label">Login</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input id="password" type="password" placeholder="Password" class="form-control" formControlName="password"/>
+    <label for="password" class="form-label">Password</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input id="confirm-password" type="password" placeholder="Confirm password" class="form-control" formControlName="confirmPassword"/>
+    <label for="confirm-password" class="form-label">Confirm password</label>
+  </div>
+  <div class="d-grid">
+    <button class="btn btn-primary btn-block" [disabled]="!registerForm.valid">Login</button>
+  </div>
+</form>

@@ -1,0 +1,13 @@
+<form [formGroup]="loginForm">
+  <div class="form-floating mb-3">
+    <input type="text" id="login" placeholder="Login" class="form-control" formControlName="login">
+    <label for="login" class="form-label">Login</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input id="password" type="password" placeholder="Password" class="form-control" formControlName="password"/>
+    <label for="password" class="form-label">Password</label>
+  </div>
+  <div class="d-grid">
+    <button class="btn btn-primary btn-block" [disabled]="!loginForm.valid">Login</button>
+  </div>
+</form>
