@@ -1,6 +1,6 @@
 ﻿namespace ChitChat.Core.Entities
 {
-    public class Message
+    public class Message : IBaseEntity
     {
         public Guid Id { get; set; }
         public string Content { get; set; }

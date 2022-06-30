@@ -2,7 +2,7 @@
 
 namespace ChitChat.Core.Entities;
 
-public class Role : IdentityRole<Guid>
+public class Role : IdentityRole<Guid>, IBaseEntity
 {
     
 }
